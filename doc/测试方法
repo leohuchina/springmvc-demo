@@ -1,0 +1,9 @@
+-项目使用springMVC+mybatis+mysql构建的resultful风格的api接口
+-共有5个接口，管理员登录，新增用户，删除用户，查询用户，修改用户
+-使用user.sql导入mysql数据，数据库默认用户，scheduler/123456
+-测试方法，
+１、查询用户信息
+http://localhost:8080/financial-web/users/query?userName=admin
+{"message":"操作成功！",
+"result":{"userName":"admin","passwd":"96e79218965eb72c92a549dd5a330112","nickName":"魏晋","userType":2,"comments":"密码是6个1","id":1},
+"code":"1000"}
